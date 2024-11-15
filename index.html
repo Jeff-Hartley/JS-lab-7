@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 7 - Introduction to Events</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>JS Lab 7</h1>
+
+    <h4>Mouse Events</h4>
+    <p>Hover over the button to display a message</p>
+    <button id="mouseEventBtn">Hover Over Me!</button>
+    <p id="mouseEventMsg"></p>
+
+    <h4>Keyboard Events</h4>
+    <p>The last key pressed in the input field should display below.</p>
+    <input type="text" name="keyboardEventInput" id="keyboardEventInput">
+    <p id="keyboardEventMsg"></p>
+
+    <h4>Form Events</h4>
+    <p>Handling form submission. The form will prevent default, and will display a message when properly submitted.</p>
+    <form id="formEventForm">
+        <label for="name">Name:</label>
+        <input type="text" name="formName" id="formName" required>
+        <button type="submit">Submit The Form</button>
+    </form>
+    <p id="formEventSuccessMsg"></p>
+
+    <h4>Focus Events</h4>
+    <p>The message below will update when the input field gains or loses focus.</p>
+    <input type="text" name="focusEventInput" id="focusEventInput">
+    <p id="focusEventMsg"></p>
+
+    <h4>Event Delegation</h4>
+    <div id="delegationDiv">
+        <button class="delegationBtn" id="btn1">#1</button>
+        <button class="delegationBtn" id="btn2">#2</button>
+        <button class="delegationBtn" id="btn3">#3</button>
+        <button class="delegationBtn" id="btn4">#4</button>
+    </div>
+    
+</body>
+</html>

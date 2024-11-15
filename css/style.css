@@ -1,5 +1,23 @@
 :root {
 --bg-color : rgb(210, 235, 179);
 --main-color : rgb(33, 109, 26);
---highlight-color : rgb(148, 101, 41);
+--highlight-color : rgb(28, 52, 155);
+--eventMsg-color1 : rgb(196, 19, 166);
+--head-size : 45px;
+--section-head-size : 20px;
+
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+h1 {
+    color: var(--main-color);
+    font-size: var(--head-size);
+}
+
+h4 {
+    color: var(--highlight-color);
+    font-size: var(--section-head-size);
 }
