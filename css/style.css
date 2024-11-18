@@ -1,10 +1,13 @@
 :root {
---bg-color : rgb(210, 235, 179);
---main-color : rgb(33, 109, 26);
+--bg-color : rgb(212, 212, 212);
+--main-color : rgb(41, 41, 41);
 --highlight-color : rgb(28, 52, 155);
 --eventMsg-color1 : rgb(196, 19, 166);
+--mouseEvent-color : rgb(255, 44, 44);
+--mouseEvent-color-hover : rgb(226, 35, 35);
+--keyboardEvent-color : rgb(245, 224, 37);
 --head-size : 45px;
---section-head-size : 20px;
+--section-head-size : 30px;
 
 }
 
@@ -15,9 +18,40 @@ body {
 h1 {
     color: var(--main-color);
     font-size: var(--head-size);
+    text-align: center;
 }
 
 h4 {
-    color: var(--highlight-color);
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-weight: bold;
+}
+
+section {
+    padding: 40px;
+}
+
+#mouseEventH {
+    color: var(--mouseEvent-color);
     font-size: var(--section-head-size);
+}
+
+#mouseEventBtn {
+    display: block;
+    margin: auto;
+    background-color: var(--mouseEvent-color);
+    border: none;
+    border-radius: 4px;
+    padding: 6px;
+}
+
+#mouseEventBtn:hover {
+    background-color: var(--mouseEvent-color-hover);
+}
+
+#mouseEventMsg {
+    color: var(--mouseEvent-color-hover);
 }
