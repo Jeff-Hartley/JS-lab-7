@@ -13,6 +13,9 @@ const formName = document.getElementById('formName');
 const formNameError = document.getElementById('formNameError');
 const formEventSuccessMsg = document.getElementById('formEventSuccessMsg');
 
+//For Focus Event 
+const focusEventInput = document.getElementById('focusEventInput');
+const focusEventMsg = document.getElementById('focusEventMsg');
 
 //event listener for hovering over the button
 mouseEventBtn.addEventListener("mouseenter", (event) =>{
@@ -45,5 +48,12 @@ formEventForm.addEventListener("submit", (event) => {
         event.preventDefault();
         formEventSuccessMsg.textContent = "Submitted Successfully!!";
     }
-    
+});
+
+focusEventInput.addEventListener("focus", () => {
+    focusEventMsg.textContent = "The input is in focus! You found the message!";
+});
+
+focusEventInput.addEventListener("blur", () => {
+    focusEventMsg.textContent = "The input went out of focus and is now 'blurred'!";
 });

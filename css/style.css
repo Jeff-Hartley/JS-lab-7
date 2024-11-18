@@ -8,6 +8,7 @@
 --keyboardEvent-color : rgb(165, 245, 37);
 --formEvent-color : rgb(37, 245, 148);
 --formEvent-color-hover : rgb(26, 209, 124);
+--focusEvent-color : rgb(37, 134, 245);
 --head-size : 45px;
 --section-head-size : 30px;
 
@@ -97,6 +98,15 @@ input {
     color: var(--successMsg);
 }
 
-#formEventFailMsg {
+#formNameError {
     color: red;
+}
+
+#focusEventH {
+    color: var(--focusEvent-color);
+    font-size: var(--section-head-size);
+}
+
+#focusEventMsg {
+    color: var(--focusEvent-color);
 }
