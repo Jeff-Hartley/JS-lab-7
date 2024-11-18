@@ -25,14 +25,17 @@
         <p id="keyboardEventMsg"></p>
     </section>
 
-    <h4>Form Events</h4>
+    <section id="formEventSection">
+    <h4 id="formEventH">Form Events</h4>
     <p>Handling form submission. The form will prevent default, and will display a message when properly submitted.</p>
     <form id="formEventForm">
-        <label for="name">Name:</label>
-        <input type="text" name="formName" id="formName" required>
-        <button type="submit">Submit The Form</button>
+        <p><label for="name">Name:</label><br></p>
+        <input type="text" name="formName" id="formName" required><br>
+        <span class="error" id="formNameError"></span><br>
+        <button type="submit" id="formEventBtn">Submit The Form</button><br>
     </form>
     <p id="formEventSuccessMsg"></p>
+    </section>
 
     <h4>Focus Events</h4>
     <p>The message below will update when the input field gains or loses focus.</p>

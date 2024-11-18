@@ -1,11 +1,13 @@
 :root {
 --bg-color : rgb(77, 77, 77);
---main-color : rgb(41, 41, 41);
+--main-color : rgb(252, 43, 43);
 --highlight-color : rgb(28, 52, 155);
---eventMsg-color1 : rgb(196, 19, 166);
---mouseEvent-color : rgb(255, 44, 44);
---mouseEvent-color-hover : rgb(226, 35, 35);
---keyboardEvent-color : rgb(245, 224, 37);
+--successMsg : rgb(21, 201, 15);
+--mouseEvent-color : rgb(255, 139, 44);
+--mouseEvent-color-hover : rgb(226, 121, 35);
+--keyboardEvent-color : rgb(165, 245, 37);
+--formEvent-color : rgb(37, 245, 148);
+--formEvent-color-hover : rgb(26, 209, 124);
 --head-size : 45px;
 --section-head-size : 30px;
 
@@ -61,7 +63,7 @@ section {
     font-size: var(--section-head-size);
 }
 
-#keyboardEventInput {
+input {
     display: block;
     margin: auto;
     border: none;
@@ -71,4 +73,30 @@ section {
 
 #keyboardEventMsg {
     color: var(--keyboardEvent-color);
+}
+
+#formEventH {
+    color: var(--formEvent-color);
+    font-size: var(--section-head-size);
+}
+
+#formEventBtn {
+    display: block;
+    margin: auto;
+    background-color: var(--formEvent-color);
+    border: none;
+    border-radius: 4px;
+    padding: 6px;
+}
+
+#formEventBtn:hover {
+    background-color: var(--formEvent-color-hover);
+}
+
+#formEventSuccessMsg {
+    color: var(--successMsg);
+}
+
+#formEventFailMsg {
+    color: red;
 }
