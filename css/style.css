@@ -9,6 +9,8 @@
 --formEvent-color : rgb(37, 245, 148);
 --formEvent-color-hover : rgb(26, 209, 124);
 --focusEvent-color : rgb(37, 134, 245);
+--delegation-color : rgb(245, 37, 228);
+--delegation-color-hover : rgb(214, 24, 198);
 --head-size : 45px;
 --section-head-size : 30px;
 
@@ -109,4 +111,37 @@ input {
 
 #focusEventMsg {
     color: var(--focusEvent-color);
+}
+
+#delegationH {
+    color: var(--delegation-color);
+    font-size: var(--section-head-size);
+}
+
+#delegationBtnContainer {
+    display: flex;
+}
+
+.delegationBtn {
+    display: block;
+    margin: auto;
+    width: 100px;
+    height: 50px;
+    background-color: var(--delegation-color);
+    border: none;
+    border-radius: 4px;
+    padding: 6px;
+}
+
+.delegationBtn:hover {
+    background-color: var(--delegation-color-hover);
+}
+
+#eventDelegationMsg {
+    color: var(--delegation-color);
+}
+
+#footer {
+    color: var(--main-color);
+    font-size: 11px;
 }

@@ -57,3 +57,17 @@ focusEventInput.addEventListener("focus", () => {
 focusEventInput.addEventListener("blur", () => {
     focusEventMsg.textContent = "The input went out of focus and is now 'blurred'!";
 });
+
+ // Access the parent element
+ const delegationBtnContainer = document.getElementById('delegationBtnContainer');
+ const eventDelegationMsg = document.getElementById('eventDelegationMsg');
+
+ // Attach event listener to the parent element
+ delegationBtnContainer.addEventListener('click', (event) => {
+     
+     if (event.target.matches(".delegationBtn")) {
+         eventDelegationMsg.textContent = event.target.textContent;
+         
+         
+     }
+ });
